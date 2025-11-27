@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/MenLand/check_version_lib/compare/v1.0.0...v1.0.1) (2025-11-27)
+
+### Bug Fixes
+
+* update greeting text in AppService to 'Hello sdf2' ([6a51ed3](https://github.com/MenLand/check_version_lib/commit/6a51ed32bcd37762fe51ca9270c5129484b9ed79))
+* update greeting text in AppService to include a placeholder token ([390ae30](https://github.com/MenLand/check_version_lib/commit/390ae306facd53351054a9638be034520ce1a7dc))
+
 ## 1.0.0 (2025-11-27)
 
 ### Features
