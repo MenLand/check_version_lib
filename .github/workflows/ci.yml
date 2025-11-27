@@ -3,8 +3,9 @@ name: CI
 on:
   push:
     branches:
-      - master
-  pull_request:
+      - master # or main
+permissions:
+  contents: read # for checkout
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -12,16 +13,18 @@ concurrency:
 
 jobs:
   release:
+    name: Release
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      issues: write
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     env:
       NPM_CONFIG_FUND: 'false'
       NPM_CONFIG_AUDIT: 'false'
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    permissions:
+      contents: write # to be able to publish a GitHub release
+      issues: write # to be able to comment on released issues
+      pull-requests: write # to be able to comment on released pull requests
+      id-token: write # to enable use of OIDC for trusted publishing and npm provenance
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
