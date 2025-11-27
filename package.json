@@ -1,6 +1,6 @@
 {
   "name": "project-name",
-  "version": "0.0.1",
+  "version": "1.0.35",
   "description": "",
   "author": "",
   "private": true,
@@ -18,7 +18,7 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "release": "cross-env GH_TOKEN=$GH_TOKEN npx -y -p semantic-release -p @semantic-release/commit-analyzer -p @semantic-release/release-notes-generator -p conventional-changelog-conventionalcommits -p @semantic-release/changelog -p @semantic-release/exec -p @semantic-release/git -p @semantic-release/github -p @semantic-release/npm semantic-release --no-ci"
+    "release": "cross-env GH_TOKEN=$GH_TOKEN npx -y -p semantic-release -p @semantic-release/commit-analyzer -p @semantic-release/release-notes-generator -p conventional-changelog-conventionalcommits -p @semantic-release/changelog -p @semantic-release/exec -p @semantic-release/git -p @semantic-release/github -p @semantic-release/npm semantic-release"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
