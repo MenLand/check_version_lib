@@ -1,3 +1,9 @@
+## [1.23.2](https://github.com/MenLand/check_version_lib/compare/v1.23.1...v1.23.2) (2025-11-27)
+
+### Bug Fixes
+
+* correct greeting text in AppService to 'Hello sdff2' ([2991edc](https://github.com/MenLand/check_version_lib/commit/2991edc0d46a8625738abfb5ba654af24f39757b))
+
 ## [1.0.1](https://github.com/MenLand/check_version_lib/compare/v1.0.0...v1.0.1) (2025-11-27)
 
 ### Bug Fixes
