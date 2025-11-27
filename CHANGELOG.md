@@ -1,3 +1,13 @@
+## [2.0.0](https://github.com/MenLand/check_version_lib/compare/v1.23.2...v2.0.0) (2025-11-27)
+
+### ⚠ BREAKING CHANGES
+
+* changed controller
+
+### Bug Fixes
+
+* update greeting text in AppService to 'Hello sdfываываf2' and adjust fetch-depth in CI workflow to 1 ([d5b8a5d](https://github.com/MenLand/check_version_lib/commit/d5b8a5d48b7b74763f83af015db1d45ce7ced364))
+
 ## [1.23.2](https://github.com/MenLand/check_version_lib/compare/v1.23.1...v1.23.2) (2025-11-27)
 
 ### Bug Fixes
